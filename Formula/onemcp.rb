@@ -2,20 +2,21 @@ class Onemcp < Formula
   desc "CLI for Gentoro OneMCP - Connect APIs to AI models via Model Context Protocol"
   homepage "https://github.com/Gentoro-OneMCP/onemcp"
   license "Apache-2.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/v0.1.0/onemcp-darwin-arm64.tar.gz"
-      sha256 "517f59e2a16b9d88b29becc6b8913bc81731396e7eb85075118d09d2169a2636"
+      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-darwin-arm64.tar.gz"
+      sha256 "ccb57a11a8e21adb2d84de6a4ba44940d296db9727ef791ac9044be3738f08ce"
     else
-      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/v0.1.0/onemcp-darwin-amd64.tar.gz"
-      sha256 "74ca792a5f03a1381209f5d70b68ee6c24c94a7d5f18c48bb8fc75d15d20363c"
+      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-darwin-amd64.tar.gz"
+      sha256 "7d90baf377d42fbfddf8c85e039ba6f6e10f368274e5f6a069a4f5c3c8528835"
     end
   end
 
   on_linux do
-    url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/v0.1.0/onemcp-linux-amd64.tar.gz"
-    sha256 "47f9116e0732217fce2f27c940a17fa83611c0d5e1ed2cf56966452e48d08082"
+    url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-linux-amd64.tar.gz"
+    sha256 "18a4e8042f3392665a0d3cc2cbe0f1a7e9255355cc46bd64cef1b3cc8c11aaa1"
   end
 
   depends_on "docker" => :recommended
