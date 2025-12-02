@@ -2,7 +2,7 @@ class Onemcp < Formula
   desc "CLI for Gentoro OneMCP - Connect APIs to AI models via Model Context Protocol"
   homepage "https://github.com/Gentoro-OneMCP/onemcp"
   license "Apache-2.0"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
