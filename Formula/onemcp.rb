@@ -7,16 +7,16 @@ class Onemcp < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-darwin-arm64.tar.gz"
-      sha256 "ccb57a11a8e21adb2d84de6a4ba44940d296db9727ef791ac9044be3738f08ce"
+      sha256 "10bd78a952aa17db9a37bdf40483d5138579f8936b18cd37699f4fe5ed9831f4"
     else
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-darwin-amd64.tar.gz"
-      sha256 "7d90baf377d42fbfddf8c85e039ba6f6e10f368274e5f6a069a4f5c3c8528835"
+      sha256 "9a35215cc99bc7ee405ecc6e18894fd55018cbbfb043ebf09e9c998d1b9a22c2"
     end
   end
 
   on_linux do
     url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.1/onemcp-linux-amd64.tar.gz"
-    sha256 "18a4e8042f3392665a0d3cc2cbe0f1a7e9255355cc46bd64cef1b3cc8c11aaa1"
+    sha256 "eb7c4538717bdbeee174c390ff918f30b31994caa6aa30f5226f9c9a8c796a4d"
   end
 
   depends_on "docker" => :recommended
