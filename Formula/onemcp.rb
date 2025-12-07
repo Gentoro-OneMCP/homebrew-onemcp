@@ -7,20 +7,20 @@ class Onemcp < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-darwin-arm64.tar.gz"
-      sha256 "52f0d0879d09d1d7de7285d3b6f829316c2dc6736484a2ccb796bd14b7815921"
+      sha256 "67cc447e5a5c55b35d1fafa972b71f28fbddf2d3b09451d534e7f617dce13aa1"
     else
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-darwin-amd64.tar.gz"
-      sha256 "48777eef34f35e9b9a11aad4e2710c0fbdf3d87fd0a0cce3ba9cb56b7e683db8"
+      sha256 "e7c87fc9c1855c94d68297df87a744c776e3bd41189e666052cbb2aa1dac7bc1"
     end
   end
 
   on_linux do
     if Hardware::CPU.is_64_bit?
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-linux-amd64.tar.gz"
-      sha256 "2368e90ac2b50130a63aa16b22ff7f402267b0d41fd5770c974670f60ae16a01"
+      sha256 "6e2ce6a6b1bea2954dd473824c7b14879a45ff21c4751e6e15bf9fec3eaba0a5"
     else
       url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-linux-386.tar.gz"
-      sha256 "d9d3f3cf9fb89d483020e2f5eea5c8e850e4b67ba35742262e315706798232a5"
+      sha256 "77920a6e8092740c0509b19114743e33c93b20344d4a5e1ec7ebab2bca331511"
     end
   end
 
