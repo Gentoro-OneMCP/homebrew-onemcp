@@ -24,16 +24,6 @@ class Onemcp < Formula
     end
   end
 
-  on_windows do
-    if Hardware::CPU.is_64_bit?
-      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-windows-amd64.zip"
-      sha256 "b0c18ebe41658ad7a08f3b8bbba8e18872ecf19d306f1b849b50779c993eca80"
-    else
-      url "https://github.com/Gentoro-OneMCP/onemcp/releases/download/cli-v0.0.4/onemcp-windows-386.zip"
-      sha256 "9e3aabe58d1bc046228cb48fd03f310f5d44507c401ce02881c92bb5ce32a7b1"
-    end
-  end
-
   depends_on "docker" => :recommended
 
   def install
